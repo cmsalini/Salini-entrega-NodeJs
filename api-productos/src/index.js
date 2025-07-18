@@ -1,6 +1,7 @@
 import express from 'express';
 import cors from 'cors';
-import productRouter from './routes/products.routes.js';
+import productRoutes from './routes/products.routes.js';
+import authRoutes from './routes/auth.routes.js';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -12,7 +13,8 @@ app.use(cors());
 app.use(express.json());
 
 // Rutas
-app.use('/api/products', productRouter);
+app.use('/auth', authRoutes);
+app.use('/api/products', productRoutes);
 
 // Middleware para rutas desconocidas
 app.use((req, res, next) => {

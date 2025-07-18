@@ -8,8 +8,13 @@
     "dev": "nodemon src/index.js",
     "start": "node src/index.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "NodeJS",
+    "Express",
+    "Firebase",
+    "JWT"
+  ],
+  "author": "Camila Salini",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
